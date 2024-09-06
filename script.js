@@ -49,4 +49,5 @@ axios.get(`http://numbersapi.com/${randNumbStart}..${randNumbStart+50}`)
         for(let x = randNumbStart; x <= randNumbStart+50;x++){
             addLi(resp.data[x], anotherListToPutIn)
         }
-    })
+    }
+)   .catch(err => console.log(err))
